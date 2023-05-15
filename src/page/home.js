@@ -2,48 +2,48 @@ import React from 'react'
 
 export default function Home() {
     return (
+        
         <div>
-            <div className="container-fluid p-5 bg-primary text-white text-center">
-                <h1>My First Bootstrap Page</h1>
-                <p>Resize this responsive page to see the effect!</p>
-            </div>
+         <div className="container mt-4">
+                    <div className="col-sm-4"></div>
+                <h1>Welcome to Website Kitty Cats FOOD!</h1>
+                </div>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <div className="container mt-5">
-            <div class="row">
-  <div class="col-sm-4">
-     <h3><img src='./images/cat.jpg' height="100"/></h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-     </div>
-  <div class="col-sm-8">
-  <h3 class="col-sm-8 bg-secondary text-whie text-center p-5">Column 1</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
   </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/11.jpg" alt="c1" class="d-block w-100"/>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/22.jpg" alt="c2" class="d-block w-100"/>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/33.jpg" alt="c3" class="d-block w-100"/>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
-                <div className="row">
-                    <div className="col-sm-4">
-                        <h3>Column 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                    </div>
-                    <div className="col-sm-4">
-                        <h3>Column 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                    </div>
-                    <div className="col-sm-4">
-                        <h3>Column 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                    </div>
-                    <div className="col-sm-4">
-                        <h3>Column 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+<div className="container mt-5"></div>
+<div className="col-sm-5">
+                        <h3>About Me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..consectetur adipisicing elit...Ut enim ad minim veniam,.</p>
                     </div>
                 </div>
-            </div>
-        </div>
+          
+        
+        
     )
 }

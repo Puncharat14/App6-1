@@ -1,5 +1,5 @@
 import React from "react";
-import NavlinkRoute from "./page/navlink-route";
+import NavlinkRoute from "./page/navbar-router";
 
 function App() {
  return(

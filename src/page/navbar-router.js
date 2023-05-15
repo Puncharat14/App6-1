@@ -2,16 +2,18 @@ import React from 'react'
 import { BrowserRouter, NavLink,Routes,Route } from 'react-router-dom'
 import Home from './home'
 import Product from './product'
-import About from './about'
+import Member from './member'
+import { Navbar } from './footer'
+import { Header } from './footer'
 
 export default function NavlinkRoute() {
   return (
     <div>
     <BrowserRouter>
 
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-info">
   <div className="container-fluid">
-    <a className="navbar-brand" href="javascript:void(0)">Cats Ma Ma Meaow!</a><div class="spinner-border text-success"></div>
+    <a className="navbar-brand" href="javascript:void(0)">Kitty Cats FOOD!</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +23,10 @@ export default function NavlinkRoute() {
         <NavLink to="/" className="nav-link" aria-current="page" href="#">Home</NavLink>
         </li>
         <li className="nav-item">
-        <NavLink to="Product" className="nav-link" href="#">Product</NavLink>
+        <NavLink to="/Member" className="nav-link" href="#">Member</NavLink>
         </li>
         <li className="nav-item">
-        <NavLink to="About" className="nav-link" href="#">About</NavLink>
+        <NavLink to="/Product" className="nav-link" href="#">Product</NavLink>
         </li>
       </ul>
       <form className="d-flex">
@@ -40,7 +42,10 @@ export default function NavlinkRoute() {
   <Routes>
     <Route path='/' element={<Home />}/>
     <Route path='/Product' element={<Product />}/>
-    <Route path='/About' element={<About />}/>
+    <Route path='/Member' element={<Member />}/>
+    <Route path='/Navbar' element={<Navbar />}/>
+    <Route path='/Header' element={<Header />}/>
+  
   </Routes>
   </BrowserRouter>
   </div>
